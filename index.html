@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gregorio Álvarez Martínez | Senior Full-Stack Developer</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+            --primary: #38bdf8;
+            --border: #334155;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+        h1 { margin: 0 0 0.5rem 0; font-size: 2.2rem; color: #fff; }
+        h2 { font-size: 1.4rem; color: var(--primary); margin-top: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+        .subtitle { font-size: 1.2rem; color: var(--muted); margin-bottom: 1rem; }
+        .contact-links a {
+            color: var(--primary);
+            text-decoration: none;
+            margin-right: 1.2rem;
+            font-weight: 500;
+        }
+        .contact-links a:hover { text-decoration: underline; }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+        }
+        .card {
+            background-color: var(--card);
+            border: 1px solid var(--border);
+            padding: 1.2rem;
+            border-radius: 8px;
+        }
+        .card h3 { margin-top: 0; color: #fff; font-size: 1.1rem; }
+        ul { padding-left: 1.2rem; margin: 0; }
+        li { margin-bottom: 0.4rem; color: #cbd5e1; }
+        .project-card {
+            background-color: var(--card);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.2rem;
+        }
+        .project-card h3 { margin-top: 0; color: var(--primary); }
+        .tag {
+            display: inline-block;
+            background: #0284c7;
+            color: #fff;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            margin-right: 0.4rem;
+            margin-top: 0.5rem;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gregorio Álvarez Martínez</h1>
+            <div class="subtitle">Senior Full-Stack Web Developer</div>
+            <p>Caracas, Venezuela (Remote Specialist) &bull; 7+ Years of Experience</p>
+            <div class="contact-links">
+                <a href="mailto:allgrego14@gmail.com">Email</a>
+                <a href="https://github.com/allgrego" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/gregorio-alvarez-martinez-6a561a124" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <p>Full-stack software developer with over 7 years of experience architecting and building scalable web applications, RESTful APIs, and cloud-native solutions. Experienced leading frontend teams, optimizing high-volume databases, building data engineering pipelines, and leveraging agentic AI workflows (Claude Code) to accelerate production cycles.</p>
+        </section>
+
+        <section>
+            <h2>Technical Core</h2>
+            <div class="skills-grid">
+                <div class="card">
+                    <h3>Frontend & UI</h3>
+                    <ul>
+                        <li>React / Next.js</li>
+                        <li>TypeScript / JavaScript</li>
+                        <li>React Query / Material UI</li>
+                        <li>Tailwind CSS / Chart.js</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Backend & Databases</h3>
+                    <ul>
+                        <li>Node.js / NestJS / Express.js</li>
+                        <li>Python (FastAPI, Flask)</li>
+                        <li>PostgreSQL / MySQL</li>
+                        <li>TypeORM / SQLAlchemy</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>DevOps & Cloud</h3>
+                    <ul>
+                        <li>Linux / Docker / Kubernetes</li>
+                        <li>CI/CD (GitLab, Jenkins)</li>
+                        <li>Vercel / Render / AWS / GCP</li>
+                        <li>Claude Code (AI Workflows)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured Architectures & Systems Built</h2>
+            
+            <div class="project-card">
+                <h3>Decoupled Full-Stack Web Platform</h3>
+                <p>Designed and built an end-to-end full-stack application from scratch. Implemented relational database schemas and backend business logic with NestJS (REST APIs, Mailtrap SMTP) deployed on Render. Built a modern Next.js UI deployed on Vercel, using AI agentic workflows for rapid prototyping.</p>
+                <span class="tag">NestJS</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Vercel</span>
+                <span class="tag">Render</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Enterprise BI & Embedded Analytics Platform</h3>
+                <p>Architected and implemented embedded interactive Power BI analytics inside Next.js. Structured PostgreSQL indexes and optimized queries to handle high-volume data. Implemented a Medallion Architecture (Bronze/Silver/Gold) in Apache Airflow to reduce pipeline execution times.</p>
+                <span class="tag">Next.js</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Apache Airflow</span>
+                <span class="tag">GCP</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Industrial Quoting & E-Commerce System</h3>
+                <p>Developed and optimized custom quoting software and business intelligence dashboards for commercial platforms. Built responsive client features and optimized database performance.</p>
+                <span class="tag">React</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Power BI</span>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; Gregorio Álvarez Martínez &bull; Senior Full-Stack Engineer</p>
+        </footer>
+    </div>
+</body>
+</html>
